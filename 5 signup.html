@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up and Sign-in</title>
+    <style>
+        input {
+            width: 6px 5px;
+            border-color: rgb(0, 255, 0);
+            height: 20px;
+            border-radius: 6px;
+        }
+
+        #btn {
+            border-radius: 0px 9px;
+            border-color: rgb(241, 131, 5);
+        }
+
+        #btn:hover {
+            background-color: rgb(137, 235, 72);
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(227, 255, 127); ">
+    <h1 style="text-align: center; color: brown;" ><strong> for Sign-up</strong></h1>
+    <form action="#" autocomplete="off" onsubmit="return validation()">
+        <table align="center" >
+            <tr>
+                <td>
+                    <label for="first_name">first name</label>
+                    <input type="text" id="first_name" placeholder="first_name" minlength="3" required>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="last name">Last name</label>
+                    <input type="text" id="last name" placeholder="last name  " minlength="3" required>
+
+
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="email  " minlength="3" required>
+
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="password  " minlength="8" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for=" confirm password"> confirm Password</label>
+                    <input type=" password" id=" confirm password" placeholder=" confirm password  " minlength="8" required>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for=" age"> age</label>
+                    <input type="number" id=" age" placeholder=" age  " min="0" max="150" required>
+                </td>
+            </tr>
+            <div class="gender">
+                <tr>
+                    <td>
+                        <label for=" male"> Male</label>
+                        <input type="radio" name="gender" id=" male" value="female">
+                        <label for=" female"> female</label>
+                        <input type="radio" name="gender" id=" female" value="female">
+                </tr>
+                </td>
+            </div>
+            <div class="terms">
+                <tr>
+                    <td>
+                        <input type="checkbox" name="agree_terms" id="agree_terms" required>
+                        <label for="agree_terms">I agree to the <a href="terms_and_condition" target="_blank"></a> terms
+                            and condition</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" id="btn">Sign up</button>
+                    </td>
+                </tr>
+            </div>
+        </table>
+    </form>  
+    
+    <br>
+    <h2 style="text-align: center;"> for Sign-in</h2>
+    <form action="#" autocomplete="off" onsubmit="return validation()">
+        <table align="center">
+            <tr>
+                <td><label for="Email">Email </label>
+<input type="email" id="Email" placeholder="email">
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">password </label>
+                    <input type="password" name="" id="password" placeholder="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" id="btn">Sign-in</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
